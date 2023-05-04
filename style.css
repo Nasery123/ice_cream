@@ -1,0 +1,12 @@
+body{
+    /*background-image: url('https://media.istockphoto.com/id/1324402462/photo/summer-ice-cream-buffet-table-with-a-variety-of-flavors-and-sweet-toppings-overhead-view-on.jpg?s=1024x1024&w=is&k=20&c=aJelqg7cQCJUBpsXWgg9ywbiVJU0-yp5uE-Ruy--Mmw=');*/
+    background-color: lightgrey;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
