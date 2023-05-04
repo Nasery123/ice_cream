@@ -137,27 +137,32 @@ function drawContainer(item) {
     totalpTopay()
 
 }
+let total1 = 0;
 function drawTotal() {
-    let total = 0;
-    iceCream.forEach(item => item.Qty > 0 ? total += item.Qty * item.price : total += 0)
-    document.getElementById('total').innerText = total.toString();
+
+    iceCream.forEach(item => item.Qty > 0 ? total1 += item.Qty * item.price : total1 += 0)
+    document.getElementById('total').innerText = total1.toString();
     totalpTopay()
 }
+let total2 = 0;
 function drawTotalTopping() {
-    let total = 0;
-    toppings.forEach(item => item.Qty > 0 ? total += item.Qty * item.price : total += 0)
-    document.getElementById('totalTop').innerText = total.toString();
+
+    toppings.forEach(item => item.Qty > 0 ? total2 += item.Qty * item.price : total2 += 0)
+    document.getElementById('totalTop').innerText = total2.toString();
     totalpTopay()
 }
+let total3 = 0;
 function drawTotalContainer() {
-    let total = 0;
-    containers.forEach(item => item.Qty > 0 ? total += item.Qty * item.price : total += 0)
-    document.getElementById('totalContainer').innerText = total.toString();
+
+    containers.forEach(item => item.Qty > 0 ? total3 += item.Qty * item.price : total3 += 0)
+    document.getElementById('totalContainer').innerText = total3.toString();
     totalpTopay()
 }
-function totalpTopay(item) {
-    let total = item.Qty * item.price;
+function totalpTopay() {
+    let total = total1 + total2 + total3;
     document.getElementById('totalToPay').innerText = total.toString();
 
 }
 totalpTopay()
+
+
