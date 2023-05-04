@@ -61,7 +61,8 @@ function drawIceCream(item) {
         iceCreamElem.innerHTML += `
         <div class="col-4"> ${item.name}</div>
         <div id='${item.name}' class="col-3"> ${item.Qty} </div>
-        <div class="col-3"> $${item.price}</div><hr>
+        <div class="col-3"> $${item.price}</div>
+        <div class="px-3"><hr></div>
 
         `
     } else {
@@ -93,7 +94,8 @@ function drawTopping(item) {
         toppingElem.innerHTML += `
         <div class="col-4"> ${item.name}</div>
         <div id='${item.name}' class="col-3"> ${item.Qty} </div>
-        <div class="col-3"> $${item.price}</div><hr>
+        <div class="col-3"> $${item.price}</div>
+        <div class="px-3"><hr></div>
         `
     } else {
         document.getElementById(item.name).innerText = item.Qty
@@ -128,7 +130,7 @@ function drawContainer(item) {
         <div class="col-4"> ${item.name}</div>
         <div id='${item.name}' class="col-3"> ${item.Qty} </div>
         <div class="col-3"> $${item.price}</div>
-        <hr>
+        <div class="px-3"><hr></div>
         `
     } else {
         document.getElementById(item.name).innerText = item.Qty
@@ -164,5 +166,3 @@ function totalpTopay() {
 
 }
 totalpTopay()
-
-
